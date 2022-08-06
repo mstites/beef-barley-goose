@@ -1,0 +1,5 @@
+#!/home/maeve/Documents/syncthing/github/beef-barley-goose/dev-env/bin/python3.10
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()
