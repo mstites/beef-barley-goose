@@ -3,6 +3,8 @@ from pygame.locals import *
 import sys
 import random
 import time
+
+# for other windows
 from tkinter import filedialog
 from tkinter import *
 import numpy
@@ -12,7 +14,7 @@ from music_manager import MusicManager
 # freq, size, channel, buffsize
 pygame.mixer.pre_init(44100, -16, 1, 512)
 pygame.init()  # Begin pygame
-#flags = FULLSCREEN | DOUBLEBUF
+flags = FULLSCREEN | DOUBLEBUF
 
 
 
