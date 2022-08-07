@@ -32,14 +32,6 @@ def init_display(res_x = 700, res_y = 350,
 
 init_display()
 
-# physics
-acc = 0.3 # acceleration
-fric = - 0.1 # friction
-
-# two components X & Y, to record 
-# player position
-vec = pygame.math.Vector2
-
 ## Game and Event loop
 while True: 
     # check user interactions
@@ -56,3 +48,14 @@ while True:
         # event handling for a range of different key presses    
         if event.type == pygame.KEYDOWN:
               pass
+
+
+##### CURRENTLY UNUSED ######
+# physics
+acc = 0.3 # acceleration
+fric = - 0.1 # friction
+
+# two components X & Y, to record 
+# player position
+vec = pygame.math.Vector2
+##############################
