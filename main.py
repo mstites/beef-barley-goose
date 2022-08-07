@@ -2,7 +2,7 @@ import pygame
 from pygame.locals import * # constants
 import sys
 import random
-import actors
+import actors as actor
 
 ## SETUP
 # pygame.init()  # Begin pygame
@@ -32,6 +32,10 @@ def init_display(res_x = 700, res_y = 350,
 
 init_display()
 
+# start objects
+background = actor.Background()
+ground = actor.Ground()
+
 ## Game and Event loop
 while True: 
     # check user interactions
@@ -48,6 +52,13 @@ while True:
         # event handling for a range of different key presses    
         if event.type == pygame.KEYDOWN:
               pass
+
+        # Render functions
+        background.render(display)
+        ground.render(display)
+
+        pygame.display.update()
+        fps_clock.tick(fps)
 
 
 ##### CURRENTLY UNUSED ######
