@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import * # constants
 import sys
 import random
+import actors
 
 ## SETUP
 # pygame.init()  # Begin pygame
